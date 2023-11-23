@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>payment</title>
+    <style type="text/css">
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            min-height: 100vh;
+            flex-wrap: wrap;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h2 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .payment-box {
+            position: relative;
+            max-width: 350px;
+            margin: 0 auto;
+            border-radius: 4px;
+            background: #F8F8F8;
+            box-shadow: 0px 4px 4px 0px #E3E3E3;
+            padding: 20px;
+            transition: 0.5s;
+            text-align: center;
+            border: 1px solid #E3E3E3;
+        }
+
+        .payment-box:hover:after {
+            box-shadow: none;
+        }
+
+        .payment-box:after {
+            content: "";
+            display: block;
+            /* width: 80%; */
+            background-color: #f5f5f5;
+            left: 10px;
+            right: 10px;
+            bottom: -10px;
+            height: 20px;
+            box-shadow: 0px 13px 30px 0px #d8d8d8;
+            position: absolute;
+            z-index: -1;
+            border-radius: 4px;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+<div class="payment-box">
+    <h2>Bedankt voor uw bestelling!
+        Scan de QR-code om te betalen via Payconiq.
+        Daarna kan u het venster sluiten.</h2>
+    <img src="https://deachterbandfrangpipanetaarten.s3.eu-central-1.amazonaws.com/2st_afgehaald.png" alt="Payconiq ">
+</div>
+
+</body>
+</html>
